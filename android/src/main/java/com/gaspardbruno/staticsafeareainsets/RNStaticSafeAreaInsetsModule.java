@@ -30,11 +30,6 @@ public class RNStaticSafeAreaInsetsModule extends ReactContextBaseJavaModule {
     return "RNStaticSafeAreaInsets";
   }
 
-  @Override
-  public Map<String, Object> getConstants() {
-    return this._getSafeAreaInsets();
-  }
-
   private Map<String, Object> _getSafeAreaInsets() {
     final Map<String, Object> constants = new HashMap<>();
 
